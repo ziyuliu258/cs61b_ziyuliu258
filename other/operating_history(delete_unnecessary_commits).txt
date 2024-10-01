@@ -1,0 +1,980 @@
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /c/Users/刘子语
+$ cd ~
+
+刘子语@DESKTOP-TLBKH7R MINGW64 ~
+$ cd cs61b
+bash: cd: cs61b: No such file or directory
+
+刘子语@DESKTOP-TLBKH7R MINGW64 ~
+$ cd f
+bash: cd: f: No such file or directory
+
+刘子语@DESKTOP-TLBKH7R MINGW64 ~
+$ cd ..
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f
+$ cd cs61b/cs61b_ziyuliu258
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main)
+$ ssh -T git@github.com
+Hi ziyuliu258! You've successfully authenticated, but GitHub does not provide shell access.
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main)
+$ git pull origin main
+error: RPC failed; curl 56 Recv failure: Connection was reset
+fatal: expected flush after ref listing
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main)
+$ git pull origin main
+remote: Enumerating objects: 76, done.
+remote: Counting objects: 100% (76/76), done.
+remote: Compressing objects: 100% (48/48), done.
+remote: Total 71 (delta 13), reused 64 (delta 10), pack-reused 0 (from 0)
+Unpacking objects: 100% (71/71), 2.02 MiB | 2.10 MiB/s, done.
+From https://github.com/ziyuliu258/cs61b_ziyuliu258
+ * branch            main       -> FETCH_HEAD
+   e44b12e..e600af2  main       -> origin/main
+Updating e44b12e..e600af2
+Fast-forward
+ .gitignore                                      |     74 +
+ README.md                                       |      3 +
+ hw0a/src/print_Index.java                       |     14 +
+ hw0a/src/quadrant_prob.java                     |     25 +
+ hw0a/src/starTriangle.java                      |     10 +
+ hw0b/skeleton.iml                               |     12 +
+ hw0b/src/JavaExercises.java                     |     45 +
+ hw0b/src/ListExercises.java                     |     29 +
+ hw0b/src/MapExercises.java                      |     26 +
+ hw0b/tests/DessertTest.java                     |     69 +
+ hw0b/tests/JavaExercisesTest.java               |     70 +
+ hw0b/tests/ListExercisesTest.java               |     65 +
+ hw0b/tests/MapExercisesTest.java                |     63 +
+ hw2/inputFiles/greeting57.txt                   |   2523 +
+ hw2/inputFiles/heart25.txt                      |    353 +
+ hw2/inputFiles/input1-no.txt                    |      1 +
+ hw2/inputFiles/input1.txt                       |      2 +
+ hw2/inputFiles/input10-no.txt                   |     56 +
+ hw2/inputFiles/input10.txt                      |     57 +
+ hw2/inputFiles/input2-no.txt                    |      3 +
+ hw2/inputFiles/input2.txt                       |      4 +
+ hw2/inputFiles/input20.txt                      |    251 +
+ hw2/inputFiles/input3.txt                       |      7 +
+ hw2/inputFiles/input4.txt                       |      9 +
+ hw2/inputFiles/input5.txt                       |     26 +
+ hw2/inputFiles/input50.txt                      |   1413 +
+ hw2/inputFiles/input6.txt                       |     19 +
+ hw2/inputFiles/input7.txt                       |     17 +
+ hw2/inputFiles/input8-dups.txt                  |     37 +
+ hw2/inputFiles/input8-no.txt                    |     34 +
+ hw2/inputFiles/input8.txt                       |     35 +
+ hw2/inputFiles/jerry47.txt                      |   1477 +
+ hw2/inputFiles/michael61.txt                    |   1823 +
+ hw2/inputFiles/sedgewick60.txt                  |   2409 +
+ hw2/inputFiles/snake1001.txt                    | 501001 +++++++++++++++++++++
+ hw2/inputFiles/snake101.txt                     |   5101 +
+ hw2/inputFiles/snake13.txt                      |     85 +
+ hw2/inputFiles/snake501.txt                     | 125501 ++++++
+ hw2/inputFiles/wayne98.txt                      |   5080 +
+ hw2/inputFiles/wayne98b.txt                     |   6063 +
+ hw2/src/InteractivePercolationVisualizer.java   |     58 +
+ hw2/src/Percolation.java                        |     38 +
+ hw2/src/PercolationPicture.java                 |     94 +
+ hw2/src/PercolationStats.java                   |     53 +
+ hw2/tests/PercolationTest.java                  |     88 +
+ lab01/src/Arithmetic.java                       |     38 +
+ lab01/tests/ArithmeticTest.java                 |     36 +
+ lab02/src/bomb/Bomb.java                        |     77 +
+ lab02/src/bomb/BombMain.java                    |     23 +
+ lab02/src/common/IntList.java                   |     62 +
+ lab02/tests/bomb/BombTest.java                  |     79 +
+ lab03/src/adventure/AdventureGame.java          |     99 +
+ lab03/src/adventure/AdventureStage.java         |      9 +
+ lab03/src/adventure/AdventureUtils.java         |     15 +
+ lab03/src/adventure/BeeCountingStage.java       |     92 +
+ lab03/src/adventure/FillerStage.java            |     47 +
+ lab03/src/adventure/MachineStage.java           |    145 +
+ lab03/src/adventure/PalindromeStage.java        |     86 +
+ lab03/src/adventure/SpeciesListStage.java       |    104 +
+ lab03/src/common/IntList.java                   |     62 +
+ lab03/src/puzzle/Puzzle.java                    |    110 +
+ lab03/src/puzzle/answer.txt                     |      1 +
+ lab03/tests/adventure/AdventureGameTests.java   |     67 +
+ lab03/tests/data/AdventureGame/answers.txt      |     76 +
+ lab03/tests/data/AdventureGame/input.txt        |     26 +
+ lab03/tests/data/BeeCountingStage/answers.txt   |     11 +
+ lab03/tests/data/BeeCountingStage/input.txt     |      4 +
+ lab03/tests/data/MachineStage/answers.txt       |     16 +
+ lab03/tests/data/MachineStage/input.txt         |      4 +
+ lab03/tests/data/PalindromeStage/answers.txt    |      8 +
+ lab03/tests/data/PalindromeStage/input.txt      |      3 +
+ lab03/tests/data/SpeciesListStage/answers.txt   |     14 +
+ lab03/tests/data/SpeciesListStage/input.txt     |      4 +
+ lab03/tests/helpers/CaptureSystemOutput.java    |    194 +
+ lab03/tests/puzzle/PuzzleReference.txt          |    110 +
+ lab03/tests/puzzle/PuzzleTest.java              |     43 +
+ lab04/magic_word.txt                            |      0
+ lab05/src/UnionFind.java                        |     46 +
+ lab05/tests/UnionFindTest.java                  |     91 +
+ proj0/skeleton2.iml                             |     14 +
+ proj0/src/game2048logic/Model.java              |    184 +
+ proj0/src/game2048rendering/Board.java          |    146 +
+ proj0/src/game2048rendering/BoardWidget.java    |    275 +
+ proj0/src/game2048rendering/GUI.java            |    104 +
+ proj0/src/game2048rendering/Game.java           |    140 +
+ proj0/src/game2048rendering/Main.java           |     49 +
+ proj0/src/game2048rendering/Side.java           |     58 +
+ proj0/src/game2048rendering/Tile.java           |     87 +
+ proj0/tests/game2048logic/TestCheckpoint.java   |    106 +
+ proj0/tests/game2048logic/TestIntegration.java  |    950 +
+ proj0/tests/game2048logic/TestTask1.java        |    142 +
+ proj0/tests/game2048logic/TestTask10.java       |    153 +
+ proj0/tests/game2048logic/TestTask2.java        |    147 +
+ proj0/tests/game2048logic/TestTask3.java        |    332 +
+ proj0/tests/game2048logic/TestTask5.java        |     92 +
+ proj0/tests/game2048logic/TestTask6.java        |    132 +
+ proj0/tests/game2048logic/TestTask7.java        |    120 +
+ proj0/tests/game2048logic/TestTask8.java        |     89 +
+ proj0/tests/game2048logic/TestTask9.java        |    326 +
+ proj0/tests/game2048logic/TestUtils.java        |     22 +
+ proj1a/src/deque/Deque61B.java                  |     79 +
+ proj1a/src/gh2/GuitarHeroLite.java              |     60 +
+ proj1a/src/gh2/GuitarPlayer.java                |    140 +
+ proj1a/src/gh2/GuitarString.java                |     54 +
+ proj1a/src/gh2/TTFAF.java                       |    186 +
+ proj1a/tests/LinkedListDeque61BTest.java        |     62 +
+ proj1a/tests/PreconditionTest.java              |    120 +
+ proj1a/tests/TestGuitarString.java              |     85 +
+ proj1b/src/Deque61B.java                        |     78 +
+ proj1b/tests/ArrayDeque61BPreconditionTest.java |     21 +
+ proj1b/tests/ArrayDeque61BTest.java             |     23 +
+ proj1b/tests/MaxArrayDeque61BTest.java          |     23 +
+ 112 files changed, 660624 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 README.md
+ create mode 100644 hw0a/src/print_Index.java
+ create mode 100644 hw0a/src/quadrant_prob.java
+ create mode 100644 hw0a/src/starTriangle.java
+ create mode 100644 hw0b/skeleton.iml
+ create mode 100644 hw0b/src/JavaExercises.java
+ create mode 100644 hw0b/src/ListExercises.java
+ create mode 100644 hw0b/src/MapExercises.java
+ create mode 100644 hw0b/tests/DessertTest.java
+ create mode 100644 hw0b/tests/JavaExercisesTest.java
+ create mode 100644 hw0b/tests/ListExercisesTest.java
+ create mode 100644 hw0b/tests/MapExercisesTest.java
+ create mode 100644 hw2/inputFiles/greeting57.txt
+ create mode 100644 hw2/inputFiles/heart25.txt
+ create mode 100644 hw2/inputFiles/input1-no.txt
+ create mode 100644 hw2/inputFiles/input1.txt
+ create mode 100644 hw2/inputFiles/input10-no.txt
+ create mode 100644 hw2/inputFiles/input10.txt
+ create mode 100644 hw2/inputFiles/input2-no.txt
+ create mode 100644 hw2/inputFiles/input2.txt
+ create mode 100644 hw2/inputFiles/input20.txt
+ create mode 100644 hw2/inputFiles/input3.txt
+ create mode 100644 hw2/inputFiles/input4.txt
+ create mode 100644 hw2/inputFiles/input5.txt
+ create mode 100644 hw2/inputFiles/input50.txt
+ create mode 100644 hw2/inputFiles/input6.txt
+ create mode 100644 hw2/inputFiles/input7.txt
+ create mode 100644 hw2/inputFiles/input8-dups.txt
+ create mode 100644 hw2/inputFiles/input8-no.txt
+ create mode 100644 hw2/inputFiles/input8.txt
+ create mode 100644 hw2/inputFiles/jerry47.txt
+ create mode 100644 hw2/inputFiles/michael61.txt
+ create mode 100644 hw2/inputFiles/sedgewick60.txt
+ create mode 100644 hw2/inputFiles/snake1001.txt
+ create mode 100644 hw2/inputFiles/snake101.txt
+ create mode 100644 hw2/inputFiles/snake13.txt
+ create mode 100644 hw2/inputFiles/snake501.txt
+ create mode 100644 hw2/inputFiles/wayne98.txt
+ create mode 100644 hw2/inputFiles/wayne98b.txt
+ create mode 100644 hw2/src/InteractivePercolationVisualizer.java
+ create mode 100644 hw2/src/Percolation.java
+ create mode 100644 hw2/src/PercolationPicture.java
+ create mode 100644 hw2/src/PercolationStats.java
+ create mode 100644 hw2/tests/PercolationTest.java
+ create mode 100644 lab01/src/Arithmetic.java
+ create mode 100644 lab01/tests/ArithmeticTest.java
+ create mode 100644 lab02/src/bomb/Bomb.java
+ create mode 100644 lab02/src/bomb/BombMain.java
+ create mode 100644 lab02/src/common/IntList.java
+ create mode 100644 lab02/tests/bomb/BombTest.java
+ create mode 100644 lab03/src/adventure/AdventureGame.java
+ create mode 100644 lab03/src/adventure/AdventureStage.java
+ create mode 100644 lab03/src/adventure/AdventureUtils.java
+ create mode 100644 lab03/src/adventure/BeeCountingStage.java
+ create mode 100644 lab03/src/adventure/FillerStage.java
+ create mode 100644 lab03/src/adventure/MachineStage.java
+ create mode 100644 lab03/src/adventure/PalindromeStage.java
+ create mode 100644 lab03/src/adventure/SpeciesListStage.java
+ create mode 100644 lab03/src/common/IntList.java
+ create mode 100644 lab03/src/puzzle/Puzzle.java
+ create mode 100644 lab03/src/puzzle/answer.txt
+ create mode 100644 lab03/tests/adventure/AdventureGameTests.java
+ create mode 100644 lab03/tests/data/AdventureGame/answers.txt
+ create mode 100644 lab03/tests/data/AdventureGame/input.txt
+ create mode 100644 lab03/tests/data/BeeCountingStage/answers.txt
+ create mode 100644 lab03/tests/data/BeeCountingStage/input.txt
+ create mode 100644 lab03/tests/data/MachineStage/answers.txt
+ create mode 100644 lab03/tests/data/MachineStage/input.txt
+ create mode 100644 lab03/tests/data/PalindromeStage/answers.txt
+ create mode 100644 lab03/tests/data/PalindromeStage/input.txt
+ create mode 100644 lab03/tests/data/SpeciesListStage/answers.txt
+ create mode 100644 lab03/tests/data/SpeciesListStage/input.txt
+ create mode 100644 lab03/tests/helpers/CaptureSystemOutput.java
+ create mode 100644 lab03/tests/puzzle/PuzzleReference.txt
+ create mode 100644 lab03/tests/puzzle/PuzzleTest.java
+ create mode 100644 lab04/magic_word.txt
+ create mode 100644 lab05/src/UnionFind.java
+ create mode 100644 lab05/tests/UnionFindTest.java
+ create mode 100644 proj0/skeleton2.iml
+ create mode 100644 proj0/src/game2048logic/Model.java
+ create mode 100644 proj0/src/game2048rendering/Board.java
+ create mode 100644 proj0/src/game2048rendering/BoardWidget.java
+ create mode 100644 proj0/src/game2048rendering/GUI.java
+ create mode 100644 proj0/src/game2048rendering/Game.java
+ create mode 100644 proj0/src/game2048rendering/Main.java
+ create mode 100644 proj0/src/game2048rendering/Side.java
+ create mode 100644 proj0/src/game2048rendering/Tile.java
+ create mode 100644 proj0/tests/game2048logic/TestCheckpoint.java
+ create mode 100644 proj0/tests/game2048logic/TestIntegration.java
+ create mode 100644 proj0/tests/game2048logic/TestTask1.java
+ create mode 100644 proj0/tests/game2048logic/TestTask10.java
+ create mode 100644 proj0/tests/game2048logic/TestTask2.java
+ create mode 100644 proj0/tests/game2048logic/TestTask3.java
+ create mode 100644 proj0/tests/game2048logic/TestTask5.java
+ create mode 100644 proj0/tests/game2048logic/TestTask6.java
+ create mode 100644 proj0/tests/game2048logic/TestTask7.java
+ create mode 100644 proj0/tests/game2048logic/TestTask8.java
+ create mode 100644 proj0/tests/game2048logic/TestTask9.java
+ create mode 100644 proj0/tests/game2048logic/TestUtils.java
+ create mode 100644 proj1a/src/deque/Deque61B.java
+ create mode 100644 proj1a/src/gh2/GuitarHeroLite.java
+ create mode 100644 proj1a/src/gh2/GuitarPlayer.java
+ create mode 100644 proj1a/src/gh2/GuitarString.java
+ create mode 100644 proj1a/src/gh2/TTFAF.java
+ create mode 100644 proj1a/tests/LinkedListDeque61BTest.java
+ create mode 100644 proj1a/tests/PreconditionTest.java
+ create mode 100644 proj1a/tests/TestGuitarString.java
+ create mode 100644 proj1b/src/Deque61B.java
+ create mode 100644 proj1b/tests/ArrayDeque61BPreconditionTest.java
+ create mode 100644 proj1b/tests/ArrayDeque61BTest.java
+ create mode 100644 proj1b/tests/MaxArrayDeque61BTest.java
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main)
+$
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main)
+$ git log
+commit e600af21ef4ee15a098a187501f72651f277cb2b (HEAD -> main, origin/main, origin/HEAD)
+Author: ziyuliu258 <161495163+ziyuliu258@users.noreply.github.com>
+Date:   Tue Oct 1 22:13:25 2024 +0800
+
+    Update README.md
+
+commit 4b7f380f507e0b005d209b32067b8d51f587d828
+Author: ziyuliu258 <161495163+ziyuliu258@users.noreply.github.com>
+Date:   Tue Oct 1 22:05:06 2024 +0800
+
+    Create README.md for cs61b
+
+commit b55f65927e131addb5688d11b216b1593a8ce59e
+Merge: 21ef951 a3229c7
+Author: ZiyuLiu258 <1209830516abc@gmail.com>
+Date:   Tue Oct 1 13:43:04 2024 +0800
+
+    Merge remote-tracking branch 'upstream/main'
+
+commit 21ef9512a1b3ad63f112ed3ae30b49de71102567
+Author: ZiyuLiu258 <1209830516abc@gmail.com>
+Date:   Tue Oct 1 13:36:38 2024 +0800
+
+    Finished hw0a
+
+commit a3229c7951700c5ce888b866ee84a07d873d8884
+Author: Liangyuan (Circle) Chen <31349394+CircleCly@users.noreply.github.com>
+Date:   Mon Sep 30 09:36:59 2024 -0700
+
+    Updating lab05 skeleton (#10)
+
+commit da6a38c24b5f0eed0e6f9b389816a3a830db51f6
+Merge: 9c657df e44b12e
+Author: ZiyuLiu258 <1209830516abc@gmail.com>
+Date:   Fri Sep 27 21:09:31 2024 +0800
+
+    Resolved merge conflicts and completed merge
+
+commit 9c657dfa33b2f599ec2a0a2b88bc7bfc39018c6a
+Author: ZiyuLiu258 <1209830516abc@gmail.com>
+Date:   Fri Sep 27 20:35:39 2024 +0800
+
+    lab01: git command test!
+
+commit ed8fda27c8147bee0388e041011bf2af857f3d55
+Author: Erik Kizior <95060863+ekizior@users.noreply.github.com>
+Date:   Fri Sep 27 00:15:41 2024 -0700
+
+    Updating hw2 skeleton (#9)
+
+commit 4ec1da9b0e876ef6265899bca0bdd09102605a8d
+Author: ZiyuLiu <1209830516abc@gmail.com>
+Date:   Fri Sep 27 12:58:24 2024 +0800
+
+    lab01: Completed Arithmetic.java
+
+commit e44b12e4fd816cfcfbd9f364330773fa6bf9cc71
+Author: ZiyuLiu <1209830516abc@gmail.com>
+Date:   Fri Sep 27 01:52:28 2024 +0800
+
+    Removed unnecessary files
+
+commit e987dfec8c7dbdb7d1b0f9281ba5f35b7bd67b79
+Merge: 0d115c6 bb9cdd1
+Author: ZiyuLiu <1209830516abc@gmail.com>
+Date:   Fri Sep 27 01:51:19 2024 +0800
+
+    Resolved merge conflicts and deleted .gitignore
+
+commit 0d115c6cba0126336e37cfbca5437bb0eabfef10
+Author: ziyuliu258 <161495163+ziyuliu258@users.noreply.github.com>
+Date:   Fri Sep 27 01:30:52 2024 +0800
+
+    Initial commit
+
+commit bb9cdd1a1ddd2ae4c1f0f0fd6b80c62f77df67cd (skeleton/main)
+Author: Erik Kizior <95060863+ekizior@users.noreply.github.com>
+Date:   Mon Sep 16 13:21:31 2024 -0700
+
+    Updating lab04 skeleton (#8)
+
+commit 30ee7fb798d2fd15a8fc4d42e052152debbcb8eb
+Author: Erik Kizior <95060863+ekizior@users.noreply.github.com>
+Date:   Fri Sep 13 14:43:50 2024 -0700
+
+    Updating proj1b skeleton (#7)
+
+commit fc34e41d2ea1fc84b2160e2089eeeff4bfabda5c
+Author: Liangyuan (Circle) Chen <31349394+CircleCly@users.noreply.github.com>
+Date:   Mon Sep 9 00:40:10 2024 -0700
+
+    Updating lab03 skeleton (#6)
+
+commit e595d50ac0dec4d2814fe091ffba49e6b1b0b036
+Author: Erik Kizior <95060863+ekizior@users.noreply.github.com>
+Date:   Fri Sep 6 11:43:29 2024 -0700
+
+    Updating proj1a skeleton (#5)
+
+commit 698de8be1d80f6c396407a6260aa78db4a8567ee
+Author: Erik Kizior <95060863+ekizior@users.noreply.github.com>
+Date:   Tue Sep 3 10:51:15 2024 -0700
+
+    Updating lab02 skeleton (#4)
+
+commit 1090d2961fbd0e826f176000b12a27fbb460434c
+Author: peyrin <31999206+peyrin@users.noreply.github.com>
+Date:   Wed Aug 28 18:19:58 2024 -0700
+
+    [config] add gitignore (#3)
+
+commit 8dfacc7698a774e40a96dd7ea73476dcc20ba987
+Merge: 9585537 9ce822d
+Author: Liangyuan (Circle) Chen <31349394+CircleCly@users.noreply.github.com>
+    Updating proj1b skeleton (#7)
+
+commit fc34e41d2ea1fc84b2160e2089eeeff4bfabda5c
+Author: Liangyuan (Circle) Chen <31349394+CircleCly@users.noreply.github.com>
+Date:   Mon Sep 9 00:40:10 2024 -0700
+
+    Updating lab03 skeleton (#6)
+
+commit e595d50ac0dec4d2814fe091ffba49e6b1b0b036
+Author: Erik Kizior <95060863+ekizior@users.noreply.github.com>
+Date:   Fri Sep 6 11:43:29 2024 -0700
+
+    Updating proj1a skeleton (#5)
+
+commit 698de8be1d80f6c396407a6260aa78db4a8567ee
+Date:   Fri Sep 27 01:30:52 2024 +0800
+
+    Initial commit
+
+commit bb9cdd1a1ddd2ae4c1f0f0fd6b80c62f77df67cd (skeleton/main)
+Author: Erik Kizior <95060863+ekizior@users.noreply.github.com>
+Date:   Mon Sep 16 13:21:31 2024 -0700
+
+    Updating lab04 skeleton (#8)
+
+commit 30ee7fb798d2fd15a8fc4d42e052152debbcb8eb
+Author: Erik Kizior <95060863+ekizior@users.noreply.github.com>
+Date:   Fri Sep 13 14:43:50 2024 -0700
+
+    Updating proj1b skeleton (#7)
+commit e600af21ef4ee15a098a187501f72651f277cb2b (HEAD -> main, origin/main, origin/HEAD)
+Author: ziyuliu258 <161495163+ziyuliu258@users.noreply.github.com>
+Date:   Tue Oct 1 22:13:25 2024 +0800
+
+    Update README.md
+
+commit 4b7f380f507e0b005d209b32067b8d51f587d828
+Author: ziyuliu258 <161495163+ziyuliu258@users.noreply.github.com>
+Date:   Tue Oct 1 22:05:06 2024 +0800
+
+    Create README.md for cs61b
+
+commit b55f65927e131addb5688d11b216b1593a8ce59e
+Merge: 21ef951 a3229c7
+commit e600af21ef4ee15a098a187501f72651f277cb2b (HEAD -> main, origin/main, origin/HEAD)
+Author: ziyuliu258 <161495163+ziyuliu258@users.noreply.github.com>
+Date:   Tue Oct 1 22:13:25 2024 +0800
+
+    Update README.md
+
+commit 4b7f380f507e0b005d209b32067b8d51f587d828
+Author: ziyuliu258 <161495163+ziyuliu258@users.noreply.github.com>
+Date:   Tue Oct 1 22:05:06 2024 +0800
+
+    Create README.md for cs61b
+
+commit b55f65927e131addb5688d11b216b1593a8ce59e
+Merge: 21ef951 a3229c7
+Author: ZiyuLiu258 <1209830516abc@gmail.com>
+Date:   Tue Oct 1 13:43:04 2024 +0800
+
+    Merge remote-tracking branch 'upstream/main'
+
+commit 21ef9512a1b3ad63f112ed3ae30b49de71102567
+Author: ZiyuLiu258 <1209830516abc@gmail.com>
+Date:   Tue Oct 1 13:36:38 2024 +0800
+
+    Finished hw0a
+
+commit a3229c7951700c5ce888b866ee84a07d873d8884
+Author: Liangyuan (Circle) Chen <31349394+CircleCly@users.noreply.github.com>
+Date:   Mon Sep 30 09:36:59 2024 -0700
+
+    Updating lab05 skeleton (#10)
+
+commit da6a38c24b5f0eed0e6f9b389816a3a830db51f6
+Merge: 9c657df e44b12e
+Author: ZiyuLiu258 <1209830516abc@gmail.com>
+Date:   Fri Sep 27 21:09:31 2024 +0800
+
+    Resolved merge conflicts and completed merge
+
+commit 9c657dfa33b2f599ec2a0a2b88bc7bfc39018c6a
+Author: ZiyuLiu258 <1209830516abc@gmail.com>
+Date:   Fri Sep 27 20:35:39 2024 +0800
+
+    lab01: git command test!
+
+commit ed8fda27c8147bee0388e041011bf2af857f3d55
+Author: Erik Kizior <95060863+ekizior@users.noreply.github.com>
+Date:   Fri Sep 27 00:15:41 2024 -0700
+
+    Updating hw2 skeleton (#9)
+
+commit 4ec1da9b0e876ef6265899bca0bdd09102605a8d
+Author: ZiyuLiu <1209830516abc@gmail.com>
+Date:   Fri Sep 27 12:58:24 2024 +0800
+
+    lab01: Completed Arithmetic.java
+
+commit e44b12e4fd816cfcfbd9f364330773fa6bf9cc71
+Author: ZiyuLiu <1209830516abc@gmail.com>
+Date:   Fri Sep 27 01:52:28 2024 +0800
+
+    Removed unnecessary files
+
+commit e987dfec8c7dbdb7d1b0f9281ba5f35b7bd67b79
+Merge: 0d115c6 bb9cdd1
+Author: ZiyuLiu <1209830516abc@gmail.com>
+Date:   Fri Sep 27 01:51:19 2024 +0800
+
+    Resolved merge conflicts and deleted .gitignore
+
+commit 0d115c6cba0126336e37cfbca5437bb0eabfef10
+Author: ziyuliu258 <161495163+ziyuliu258@users.noreply.github.com>
+Date:   Fri Sep 27 01:30:52 2024 +0800
+
+    Initial commit
+
+commit bb9cdd1a1ddd2ae4c1f0f0fd6b80c62f77df67cd (skeleton/main)
+Author: Erik Kizior <95060863+ekizior@users.noreply.github.com>
+Date:   Mon Sep 16 13:21:31 2024 -0700
+
+    Updating lab04 skeleton (#8)
+
+commit 30ee7fb798d2fd15a8fc4d42e052152debbcb8eb
+Author: Erik Kizior <95060863+ekizior@users.noreply.github.com>
+Date:   Fri Sep 13 14:43:50 2024 -0700
+
+    Updating proj1b skeleton (#7)
+
+commit fc34e41d2ea1fc84b2160e2089eeeff4bfabda5c
+Author: Liangyuan (Circle) Chen <31349394+CircleCly@users.noreply.github.com>
+Date:   Mon Sep 9 00:40:10 2024 -0700
+
+    Updating lab03 skeleton (#6)
+
+commit e595d50ac0dec4d2814fe091ffba49e6b1b0b036
+Author: Erik Kizior <95060863+ekizior@users.noreply.github.com>
+Date:   Fri Sep 6 11:43:29 2024 -0700
+
+    Updating proj1a skeleton (#5)
+
+commit 698de8be1d80f6c396407a6260aa78db4a8567ee
+Author: Erik Kizior <95060863+ekizior@users.noreply.github.com>
+Date:   Tue Sep 3 10:51:15 2024 -0700
+
+    Updating lab02 skeleton (#4)
+
+commit 1090d2961fbd0e826f176000b12a27fbb460434c
+Finishing logfile... (interrupt to abort)
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main)
+$ git pull origin main
+remote: Enumerating objects: 26, done.
+remote: Counting objects: 100% (26/26), done.
+remote: Compressing objects: 100% (24/24), done.
+Unpacking objects: 100% (24/24), 9.02 KiB | 288.00 KiB/s, done.
+remote: Total 24 (delta 14), reused 0 (delta 0), pack-reused 0 (from 0)
+From https://github.com/ziyuliu258/cs61b_ziyuliu258
+ * branch            main       -> FETCH_HEAD
+   e600af2..141972f  main       -> origin/main
+Updating e600af2..141972f
+Fast-forward
+ README.md | 75 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++---
+ 1 file changed, 72 insertions(+), 3 deletions(-)
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main)
+$ git log
+commit 141972f5378e84717ab91a4f811f4bca9ae4eb3b (HEAD -> main, origin/main, origin/HEAD)
+Author: ziyuliu258 <161495163+ziyuliu258@users.noreply.github.com>
+Date:   Wed Oct 2 00:19:22 2024 +0800
+
+    Update README.md
+
+    Form the first version.
+
+commit 75339d1712f8516ab650d31f0ab8489684207401
+Author: ziyuliu258 <161495163+ziyuliu258@users.noreply.github.com>
+Date:   Tue Oct 1 22:28:56 2024 +0800
+
+    Update README.md
+
+commit ad7a54244efaab0aee0cfd21f03351ee0a7f283d
+Author: ziyuliu258 <161495163+ziyuliu258@users.noreply.github.com>
+Date:   Tue Oct 1 22:28:33 2024 +0800
+
+    Update README.md
+
+commit 25268d12e0b0041b63b97a2c8cd94f5017b44b5e
+Author: ziyuliu258 <161495163+ziyuliu258@users.noreply.github.com>
+Date:   Tue Oct 1 22:26:39 2024 +0800
+
+    Update README.md
+
+commit 76efe77ae24dc46639fc53610752c48b56a53102
+Author: ziyuliu258 <161495163+ziyuliu258@users.noreply.github.com>
+Date:   Tue Oct 1 22:23:53 2024 +0800
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main)
+$ git log --oneline
+141972f (HEAD -> main, origin/main, origin/HEAD) Update README.md
+75339d1 Update README.md
+ad7a542 Update README.md
+25268d1 Update README.md
+76efe77 Update README.md
+644723a Update README.md
+82dcf14 Update README.md
+45ea496 Update README.md
+e600af2 Update README.md
+4b7f380 Create README.md for cs61b
+b55f659 Merge remote-tracking branch 'upstream/main'
+21ef951 Finished hw0a
+a3229c7 Updating lab05 skeleton (#10)
+da6a38c Resolved merge conflicts and completed merge
+9c657df lab01: git command test!
+ed8fda2 Updating hw2 skeleton (#9)
+4ec1da9 lab01: Completed Arithmetic.java
+e44b12e Removed unnecessary files
+e987dfe Resolved merge conflicts and deleted .gitignore
+0d115c6 Initial commit
+bb9cdd1 (skeleton/main) Updating lab04 skeleton (#8)
+30ee7fb Updating proj1b skeleton (#7)
+fc34e41 Updating lab03 skeleton (#6)
+e595d50 Updating proj1a skeleton (#5)
+698de8b Updating lab02 skeleton (#4)
+1090d29 [config] add gitignore (#3)
+8dfacc7 Merge pull request #2 from Berkeley-CS61B/lab01_151f0036
+9ce822d Updating lab01 skeleton
+9585537 Merge pull request #1 from Berkeley-CS61B/hw0b_e6440455
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main)
+$ git rebase -i HEAD~10
+error: nothing to do
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main)
+$ git reflog
+141972f (HEAD -> main, origin/main, origin/HEAD) HEAD@{0}: pull origin main: Fast-forward
+e600af2 HEAD@{1}: pull origin main: Fast-forward
+e44b12e HEAD@{2}: reset: moving to HEAD
+e44b12e HEAD@{3}: reset: moving to HEAD
+e44b12e HEAD@{4}: Branch: renamed refs/heads/main to refs/heads/main
+e44b12e HEAD@{6}: commit: Removed unnecessary files
+e987dfe HEAD@{7}: commit (merge): Resolved merge conflicts and deleted .gitignore
+0d115c6 HEAD@{8}: clone: from https://github.com/ziyuliu258/cs61b_ziyuliu258.git
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main)
+$ git log
+commit 141972f5378e84717ab91a4f811f4bca9ae4eb3b (HEAD -> main, origin/main, origin/HEAD)
+Author: ziyuliu258 <161495163+ziyuliu258@users.noreply.github.com>
+Date:   Wed Oct 2 00:19:22 2024 +0800
+
+    Update README.md
+
+    Form the first version.
+
+commit 75339d1712f8516ab650d31f0ab8489684207401
+Author: ziyuliu258 <161495163+ziyuliu258@users.noreply.github.com>
+Date:   Tue Oct 1 22:28:56 2024 +0800
+
+    Update README.md
+
+commit ad7a54244efaab0aee0cfd21f03351ee0a7f283d
+Author: ziyuliu258 <161495163+ziyuliu258@users.noreply.github.com>
+Date:   Tue Oct 1 22:28:33 2024 +0800
+
+    Update README.md
+
+commit 25268d12e0b0041b63b97a2c8cd94f5017b44b5e
+Author: ziyuliu258 <161495163+ziyuliu258@users.noreply.github.com>
+Date:   Tue Oct 1 22:26:39 2024 +0800
+
+    Update README.md
+
+commit 76efe77ae24dc46639fc53610752c48b56a53102
+Author: ziyuliu258 <161495163+ziyuliu258@users.noreply.github.com>
+Date:   Tue Oct 1 22:23:53 2024 +0800
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main)
+$ git log --oneline
+141972f (HEAD -> main, origin/main, origin/HEAD) Update README.md
+75339d1 Update README.md
+ad7a542 Update README.md
+25268d1 Update README.md
+76efe77 Update README.md
+644723a Update README.md
+82dcf14 Update README.md
+45ea496 Update README.md
+e600af2 Update README.md
+4b7f380 Create README.md for cs61b
+b55f659 Merge remote-tracking branch 'upstream/main'
+21ef951 Finished hw0a
+a3229c7 Updating lab05 skeleton (#10)
+da6a38c Resolved merge conflicts and completed merge
+9c657df lab01: git command test!
+ed8fda2 Updating hw2 skeleton (#9)
+4ec1da9 lab01: Completed Arithmetic.java
+e44b12e Removed unnecessary files
+e987dfe Resolved merge conflicts and deleted .gitignore
+0d115c6 Initial commit
+bb9cdd1 (skeleton/main) Updating lab04 skeleton (#8)
+30ee7fb Updating proj1b skeleton (#7)
+fc34e41 Updating lab03 skeleton (#6)
+e595d50 Updating proj1a skeleton (#5)
+698de8b Updating lab02 skeleton (#4)
+1090d29 [config] add gitignore (#3)
+8dfacc7 Merge pull request #2 from Berkeley-CS61B/lab01_151f0036
+9ce822d Updating lab01 skeleton
+9585537 Merge pull request #1 from Berkeley-CS61B/hw0b_e6440455
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main)
+$ git rebase -i HEAD~10
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+error: could not apply 141972f... Update README.md
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+hint: Disable this message with "git config advice.mergeConflict false"
+Could not apply 141972f... Update README.md
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main|REBASE 10/10)
+$ nano README.md
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main|REBASE 10/10)
+$ git add README.md
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main|REBASE 10/10)
+$ git reset
+Unstaged changes after reset:
+M       README.md
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main|REBASE 10/10)
+$ git status
+interactive rebase in progress; onto b55f659
+Last commands done (10 commands done):
+   drop 75339d1 Update README.md
+   pick 141972f Update README.md
+  (see more in file .git/rebase-merge/done)
+No commands remaining.
+You are currently editing a commit while rebasing branch 'main' on 'b55f659'.
+  (use "git commit --amend" to amend the current commit)
+  (use "git rebase --continue" once you are satisfied with your changes)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main|REBASE 10/10)
+$ git status
+interactive rebase in progress; onto b55f659
+Last commands done (10 commands done):
+   drop 75339d1 Update README.md
+   pick 141972f Update README.md
+  (see more in file .git/rebase-merge/done)
+No commands remaining.
+You are currently editing a commit while rebasing branch 'main' on 'b55f659'.
+  (use "git commit --amend" to amend the current commit)
+  (use "git rebase --continue" once you are satisfied with your changes)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main|REBASE 10/10)
+$ git add README.md
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main|REBASE 10/10)
+$ git rebase --continue
+[detached HEAD a0dfee4] Update README.md
+ Author: ziyuliu258 <161495163+ziyuliu258@users.noreply.github.com>
+ 1 file changed, 74 insertions(+), 2 deletions(-)
+Successfully rebased and updated refs/heads/main.
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main)
+$ git log --oneline
+a0dfee4 (HEAD -> main) Update README.md
+4b7f380 Create README.md for cs61b
+b55f659 Merge remote-tracking branch 'upstream/main'
+21ef951 Finished hw0a
+a3229c7 Updating lab05 skeleton (#10)
+da6a38c Resolved merge conflicts and completed merge
+9c657df lab01: git command test!
+ed8fda2 Updating hw2 skeleton (#9)
+4ec1da9 lab01: Completed Arithmetic.java
+e44b12e Removed unnecessary files
+e987dfe Resolved merge conflicts and deleted .gitignore
+0d115c6 Initial commit
+bb9cdd1 (skeleton/main) Updating lab04 skeleton (#8)
+30ee7fb Updating proj1b skeleton (#7)
+fc34e41 Updating lab03 skeleton (#6)
+e595d50 Updating proj1a skeleton (#5)
+698de8b Updating lab02 skeleton (#4)
+1090d29 [config] add gitignore (#3)
+8dfacc7 Merge pull request #2 from Berkeley-CS61B/lab01_151f0036
+9ce822d Updating lab01 skeleton
+9585537 Merge pull request #1 from Berkeley-CS61B/hw0b_e6440455
+b41a300 Updating hw0b skeleton
+64ead84 Updating proj0 skeleton
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main)
+$ git status
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 1 and 9 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+nothing to commit, working tree clean
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main)
+$ nano README.md
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main)
+$ git add README.md
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main)
+$ git rebase --continue
+fatal: no rebase in progress
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main)
+$ git status
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 1 and 9 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+nothing to commit, working tree clean
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main)
+$ git log
+commit a0dfee4bbf290a42414f34de0b25e08be042f17f (HEAD -> main)
+Author: ziyuliu258 <161495163+ziyuliu258@users.noreply.github.com>
+Date:   Wed Oct 2 00:19:22 2024 +0800
+
+    Update README.md
+
+    Form the first version.
+
+commit 4b7f380f507e0b005d209b32067b8d51f587d828
+Author: ziyuliu258 <161495163+ziyuliu258@users.noreply.github.com>
+Date:   Tue Oct 1 22:05:06 2024 +0800
+
+    Create README.md for cs61b
+
+commit b55f65927e131addb5688d11b216b1593a8ce59e
+Merge: 21ef951 a3229c7
+Author: ZiyuLiu258 <1209830516abc@gmail.com>
+Date:   Tue Oct 1 13:43:04 2024 +0800
+
+    Merge remote-tracking branch 'upstream/main'
+
+commit 21ef9512a1b3ad63f112ed3ae30b49de71102567
+Author: ZiyuLiu258 <1209830516abc@gmail.com>
+Date:   Tue Oct 1 13:36:38 2024 +0800
+
+    Finished hw0a
+
+commit a3229c7951700c5ce888b866ee84a07d873d8884
+Author: Liangyuan (Circle) Chen <31349394+CircleCly@users.noreply.github.com>
+Date:   Mon Sep 30 09:36:59 2024 -0700
+
+    Updating lab05 skeleton (#10)
+
+commit da6a38c24b5f0eed0e6f9b389816a3a830db51f6
+Merge: 9c657df e44b12e
+Author: ZiyuLiu258 <1209830516abc@gmail.com>
+Date:   Fri Sep 27 21:09:31 2024 +0800
+
+    Resolved merge conflicts and completed merge
+
+commit 9c657dfa33b2f599ec2a0a2b88bc7bfc39018c6a
+Author: ZiyuLiu258 <1209830516abc@gmail.com>
+Date:   Fri Sep 27 20:35:39 2024 +0800
+
+    lab01: git command test!
+
+commit ed8fda27c8147bee0388e041011bf2af857f3d55
+Author: Erik Kizior <95060863+ekizior@users.noreply.github.com>
+Date:   Fri Sep 27 00:15:41 2024 -0700
+
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main)
+$ git add README.md
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main)
+$ git commit -m "Remove some unnecessary commits on README.md"
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 1 and 9 different commits each, respectively.
+
+nothing to commit, working tree clean
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main)
+$ git diff README.md
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main)
+$ git branch
+* main
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main)
+$ git checkout -b backup-branch
+git push origin backup-branch
+Switched to a new branch 'backup-branch'
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 32 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.76 KiB | 1.76 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'backup-branch' on GitHub by visiting:
+remote:      https://github.com/ziyuliu258/cs61b_ziyuliu258/pull/new/backup-branch
+remote:
+To https://github.com/ziyuliu258/cs61b_ziyuliu258.git
+ * [new branch]      backup-branch -> backup-branch
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (backup-branch)
+$ git branch
+* backup-branch
+  main
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (backup-branch)
+$ git diff main..backup-branch
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (backup-branch)
+$ git checkout main
+Switched to branch 'main'
+Your branch and 'origin/main' have diverged,
+and have 1 and 9 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main)
+$ git checkout backup-branch
+Switched to branch 'backup-branch'
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (backup-branch)
+$ git status
+On branch backup-branch
+nothing to commit, working tree clean
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (backup-branch)
+$ git checkout main
+Switched to branch 'main'
+Your branch and 'origin/main' have diverged,
+and have 1 and 9 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main)
+$ git reset --hard backup
+fatal: ambiguous argument 'backup': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main)
+$ git reset --hard backup-branch
+HEAD is now at a0dfee4 Update README.md
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main)
+$ git push origin main --force
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/ziyuliu258/cs61b_ziyuliu258.git
+ + 141972f...a0dfee4 main -> main (forced update)
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main)
+$ git branch -d backup
+error: branch 'backup' not found
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main)
+$ git branch -d backup-branch
+Deleted branch backup-branch (was a0dfee4).
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main)
+$ git push origin --delete backup-branch
+To https://github.com/ziyuliu258/cs61b_ziyuliu258.git
+ - [deleted]         backup-branch
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main)
+$ git branch -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+  remotes/skeleton/main
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main)
+$ git push origin main
+Everything up-to-date
+
+刘子语@DESKTOP-TLBKH7R MINGW64 /f/cs61b/cs61b_ziyuliu258 (main)
+$
