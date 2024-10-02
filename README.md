@@ -15,8 +15,7 @@
    以下是一个示例，展示了如何在 Markdown 文件中正确使用代码块（代码细节请进入`Edit`模式查看）：
    
 ```bash
-git fetch upstream   # 从上游仓库拉取更新
-git merge upstream/main   # 合并到当前分支
+git fetch skeleton   # 从框架源仓库拉取更新
 ```
 
 ### 2. 利用本地文本编辑器解决冲突可能遭遇的相关问题
@@ -27,7 +26,7 @@ git merge upstream/main   # 合并到当前分支
 ### 1. 打开git bash之后的初步准备工作：  
 (1). **检查是否成功链接到个人仓库:**
 
-   - 先通过`cd`操作令当前目录为`/f/cs61b/cs61b_ziyuliu258`；
+   - 先通过`cd`操作令当前目录为`f/cs61b/cs61b_ziyuliu258`；
    - 然后进行验证工作，输入以下代码：
 ```bash
 ssh -T git@github.com
@@ -42,12 +41,14 @@ ssh -T git@github.com
 (3). **合并远程更新:**
 
    ```bash
-   git fetch upstream   # 从上游仓库拉取更新
-   git merge upstream/main   # 合并到当前分支
+   git fetch skeleton   # 从上游仓库拉取更新
    ```
 
 (4) **合并可能的冲突**:
 
+   ```bash
+   git merge skeleton/main   # 将可能出现的冲突合并到当前分支
+   ```
    略(非必需，如果有再具体处理)。
 
 (5) **推送到个人仓库**:
