@@ -28,10 +28,10 @@ public class ListExercises {
     public static List<Integer> common(List<Integer> L1, List<Integer> L2) {
         // TODO: Fill in this function.
         List<Integer> tg=new ArrayList<>();
-        for(int i=0;i<L1.size();i++){
-            for(int j=0;j<L2.size();j++){
-                if(L2.get(j).equals(L1.get(i))){
-                    tg.add(L1.get(i));
+        for (Integer i : L1) {
+            for (Integer j : L2) {
+                if (j.equals(i)) {
+                    tg.add(i);
                 }
             }
         }
